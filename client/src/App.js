@@ -1,10 +1,12 @@
 import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import Home from "./screens/Home";
 
 function App() {
   return (
-    <div className="container mx-auto">
-      <h1 className="font-bold contaoner">hellow</h1>
-    </div>
+    <Router>
+      <Home />
+    </Router>
   );
 }
 
