@@ -10,37 +10,38 @@ function Header() {
 
   return (
     <div className={isScrolled ? "navbar scrolled" : "navbar"}>
-      <div className="container mx-auto px-3 flex items-center justify-between h-20">
-        <div className="left flex">
+      <div className="container flex items-center justify-between h-20 px-3 mx-auto">
+        <div className="flex items-center left">
+          <i className="px-2 mr-8 text-xl bg-black border-2 rounded-sm cursor-pointer xl:hidden fas fa-bars mobile_icon lg:hidden sm:flex"></i>
           <img
-            width="130px"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
             alt="netflix"
-            className="mr-10 cursor-pointer"
+            className="w-32 h-10 mr-10 cursor-pointer"
           />
-          <span className="mx-3.5 capitalize pt-1 cursor-pointer">
-            homepage
-          </span>
-          <span className="mx-3.5 capitalize pt-1 cursor-pointer">series</span>
-          <span className="mx-3.5 capitalize pt-1 cursor-pointer">movies</span>
-          <span className="mx-3.5 capitalize pt-1 cursor-pointer">
-            new and popular
-          </span>
-          <span className="mx-3.5 capitalize pt-1 cursor-pointer">my list</span>
+          <ul className="hidden xl:flex nav_items">
+            <li className="mx-3.5 mt-2.5 cursor-pointer capitalize">
+              homepage
+            </li>
+            <li className="mx-3.5 mt-2.5 cursor-pointer capitalize">series</li>
+            <li className="mx-3.5 mt-2.5 cursor-pointer capitalize">movies</li>
+            <li className="mx-3.5 mt-2.5 cursor-pointer capitalize">
+              news & popular
+            </li>
+            <li className="mx-3.5 mt-2.5 cursor-pointer capitalize">my list</li>
+          </ul>
         </div>
-        <div className="right flex items-center">
-          <i className="fas fa-search mx-5 cursor-pointer"></i>
-          <span className="capitalize cursor-pointer">kid</span>
-          <i className="fas fa-bell mx-5 cursor-pointer"></i>
+        <div className="flex items-center right">
+          <i className="mx-2 cursor-pointer fas fa-search"></i>
+          <i className="mx-5 cursor-pointer fas fa-bell"></i>
           <img
             src="https://rashed-abir.web.app/static/media/rashed%20abir.bad348d4.JPEG"
             alt=""
             width="35px"
-            className="rounded-lg object-cover"
+            className="object-cover rounded-lg"
           />
           <div className="profile">
-            <i className="fas fa-sort-down mx-5 arrow_icon mr-0 cursor-pointer"></i>
-            <div className="option capitalize">
+            <i className="mx-5 mr-0 cursor-pointer fas fa-sort-down arrow_icon"></i>
+            <div className="capitalize option">
               <span className="p-3 cursor-pointer">settings</span>
               <span className="p-3 cursor-pointer">logout</span>
             </div>

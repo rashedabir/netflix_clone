@@ -2,16 +2,16 @@ import React from "react";
 
 function Featured({ type }) {
   return (
-    <div className="featured relative">
+    <div className="relative featured">
       {type && (
-        <div className="category absolute top-36 left-10 text-white flex items-center">
+        <div className="absolute flex items-center text-white category top-36 left-10">
           <span className="text-3xl font-bold">
             {type === "movie" ? "Movies" : "Series"}
           </span>
           <select
             name="genre"
             id="genre"
-            className="cursor-pointer ml-4 text-sm px-3 py-1"
+            className="px-3 py-1 ml-4 text-sm cursor-pointer"
           >
             <option>Genre</option>
             <option value="adventure">Adventure</option>
@@ -33,27 +33,27 @@ function Featured({ type }) {
       <img
         src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
         alt=""
-        className="w-full h-full object-cover"
+        className="object-cover w-full h-full"
       />
-      <div className="info w-4/12 absolute bottom-48 left-10 flex flex-col">
+      <div className="absolute flex flex-col top-20 info left-10 right-10 ">
         <img
           src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABUZdeG1DrMstq-YKHZ-dA-cx2uQN_YbCYx7RABDk0y7F8ZK6nzgCz4bp5qJVgMizPbVpIvXrd4xMBQAuNe0xmuW2WjoeGMDn1cFO.webp?r=df1"
           alt=""
           width="400px"
         />
-        <span className="desc my-5">
+        <span className="my-5 xl:w-1/2 desc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
           adipisci repellendus eum quasi illo, velit numquam, maxime tempora
           sint deleniti, aliquid qui? Facilis, adipisci! Ratione hic repudiandae
           temporibus eum earum?
         </span>
-        <div className="buttons flex">
-          <button className="py-2 px-4 items-center mr-3 bg-white text-black rounded-md">
-            <i className="fas fa-play mr-2"></i>
+        <div className="flex buttons">
+          <button className="flex items-center px-4 py-2 mr-3 text-black bg-white rounded-md">
+            <i className="mr-2 fas fa-play"></i>
             <span>Play</span>
           </button>
-          <button className="py-2 px-4 items-center bg-gray-400 text-white ml-3 rounded-md">
-            <i className="fas fa-info-circle mr-2"></i>
+          <button className="flex items-center px-4 py-2 ml-3 text-white bg-gray-400 rounded-md">
+            <i className="mr-2 fas fa-info-circle"></i>
             <span>Info</span>
           </button>
         </div>

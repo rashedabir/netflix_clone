@@ -1,12 +1,17 @@
 import React from "react";
 import Featured from "../components/Featured";
 import Header from "../components/Header";
+import List from "../components/List";
 
 function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
-      <Featured type="series" />
+      <Featured />
+      <List />
+      <List />
+      <List />
+      <List />
     </div>
   );
 }
