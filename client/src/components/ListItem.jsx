@@ -29,20 +29,22 @@ function ListItem({ index }) {
         <>
           <video src={trailer} autoPlay={true} loop />
           <div className="flex flex-col p-5 item_info">
-            <div className="icons">
-              <i className="fas fa-play"></i>
-              <i className="fas fa-plus"></i>
-              <i className="fas fa-thumbs-up"></i>
-              <i className="fas fa-thumbs-down"></i>
+            <div className="text-sm icons">
+              <i className="p-2 border-2 border-white fas fa-play rounded-3xl mr-1.5 mb-2"></i>
+              <i className="p-2 border-2 border-white fas fa-plus rounded-3xl mr-1.5 mb-2"></i>
+              <i className="p-2 border-2 border-white fas fa-thumbs-up rounded-3xl mr-1.5 mb-2"></i>
+              <i className="p-2 border-2 border-white fas fa-thumbs-down rounded-3xl mr-1.5 mb-2"></i>
             </div>
-            <div className="itemInfoTop">
-              <span>1 hour 46 mins</span>
-              <span>+16</span>
-              <span>2001</span>
+            <div className="mb-1 text-sm itemInfoTop">
+              <span className="text-gray-400 mr-2.5">1 hour 46 mins</span>
+              <span className="text-gray-400 mr-2.5 border-2 border-gray-400 p-1">
+                +16
+              </span>
+              <span className="text-gray-400 mr-2.5">2001</span>
             </div>
-            <div>
+            <div className="mb-1 text-sm">
               In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form.
+              text commonly used.
             </div>
             <div>action</div>
           </div>
